@@ -1,7 +1,9 @@
-import type { FC, ReactNode } from 'react';
-import PropTypes from 'prop-types';
-import { Outlet } from 'react-router-dom';
-// import experimentalStyled from '@mui/styled-engine';
+import type { FC, ReactNode } from "react";
+import PropTypes from "prop-types";
+import { Outlet } from "react-router-dom";
+
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 
 interface MainLayoutProps {
   children?: ReactNode;
@@ -14,9 +16,17 @@ interface MainLayoutProps {
 // }));
 
 const MainLayout: FC<MainLayoutProps> = ({ children }) => {
-  return <div>
-    {children || <Outlet />}
-</div>;
+  return (
+    <div>
+      <Header />
+      <main>
+        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          {children || <Outlet />}
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
 };
 
 MainLayout.propTypes = {
