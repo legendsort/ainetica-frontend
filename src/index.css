@@ -20,3 +20,11 @@ code {
   background-color: white;
   color: black;
 }
+
+.hero {
+  font-family: "Dune Rise";
+}
+
+* * {
+  font-family: "Basis Grotesque Arabic Pro";
+}

@@ -1,11 +1,10 @@
 import { Fragment } from "react";
-import { Disclosure} from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 
-
 const navigation = [
-  { name: "Home", href: "#", class: ""},
+  { name: "Home", href: "#", class: "" },
   { name: "Introduction", href: "#", class: "" },
   { name: "Feature", href: "#", class: "" },
   { name: "Goals", href: "#", class: "" },
@@ -19,26 +18,27 @@ export default function Header() {
         <Disclosure as="nav" className="bg-black  ">
           {({ open }: { open: Boolean }) => (
             <>
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="mx-auto max-w-6xl px-8 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
-                  <div className="flex items-center">
+                  <div className="flex items-center w-full">
                     <div className="flex-shrink-0">
                       <img
-                        className="h-8 w-8"
-                        src="../../logo.png"
+                        src="/assets/logo/logo.png"
                         alt="Ainetica"
                       />
                     </div>
-                    <div className="navbar hidden md:flex md:justify-end">
+
+                    <div className="ml-auto navbar hidden md:flex md:justify-end">
                       <div className="ml-10 flex   ">
                         {navigation.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
                             className={clsx(
+
                               item.class,
                               "text-gray-300 hover:bg-gray-700 hover:text-white",
-                              "rounded-md px-3 py-2 pl-8 pr-8 text-sm font-medium"
+                              "rounded-md px-3 py-2 pl-8 pr-8  text-xl font-medium"
                             )}
                           >
                             {item.name}
