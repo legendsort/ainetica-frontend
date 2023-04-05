@@ -2,7 +2,7 @@ const Introduction = () => {
   return (
     <div className="bg-black text-white text-xl ">
       <div
-        className="flex bg-center h-[107px]"
+        className="flex bg-center h-[107px] filter grayscale"
         style={{ backgroundImage: "url('/assets/etc/introduction.png')" }}
       >
         <div className="flex items-center justify-center mx-auto">
@@ -38,7 +38,7 @@ const Introduction = () => {
       </div>
       <div className="flex items-center justify-center p-10">
         <img
-          className="w-[940px] h-[222px] md:h-[422px]"
+          className="w-[940px] h-[222px] md:h-[422px] filter grayscale"
           src="/assets/etc/intro.png"
           alt="hero"
         />
