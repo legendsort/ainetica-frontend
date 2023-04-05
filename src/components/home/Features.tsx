@@ -59,7 +59,7 @@ const items = [
 
 const Features = () => {
   return (
-    <div className="bg-[#D9D9D9] text-black text-xl leading-5 ">
+    <div className="bg-[#D9D9D9] text-black text-sm md:text-xl leading-5 ">
       <div className="flex items-center justify-center mx-auto">
         <h1 className="uppercase title pt-10">-Features-</h1>
       </div>
