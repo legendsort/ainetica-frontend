@@ -1,4 +1,5 @@
-const Footer = () => {  return (
+const Footer = () => {
+  return (
     <div className="bg-[#D9D9D9] min-h-[322px] text-black">
       <div className="grid grid-cols-2 mx-auto">
         <div className="col-span-2 flex justify-center p-3 md:col-span-1 pt-20 md:pt-24">
@@ -25,16 +26,28 @@ const Footer = () => {  return (
             </div>
             <div className="col-span-1">
               <h3 className="text-lg font-bold">Connect</h3>
-              <div className = "pt-2 flex flex-row items-center">
-                <img className = "w-[30px] md:w-[50px] pr-1" src="/assets/etc/discord.png" alt="Discord" />
+              <div className="pt-2 flex flex-row items-center">
+                <img
+                  className="w-[30px] md:w-[50px] pr-1"
+                  src="/assets/etc/discord.png"
+                  alt="Discord"
+                />
                 <span>Discord</span>
               </div>
-              <div className = "pt-3 flex flex-row items-center">
-                <img className = "w-[30px] md:w-[50px] pr-1" src="/assets/etc/telegram.png" alt="Telegram" />
+              <div className="pt-3 flex flex-row items-center">
+                <img
+                  className="w-[30px] md:w-[50px] pr-1"
+                  src="/assets/etc/telegram.png"
+                  alt="Telegram"
+                />
                 <span>Telegram</span>
               </div>
-              <div className = "pt-3 flex flex-row items-center">
-                <img className = "w-[30px] md:w-[50px] pr-1" src="/assets/etc/twitter.png" alt="Twitter" />
+              <div className="pt-3 flex flex-row items-center">
+                <img
+                  className="w-[30px] md:w-[50px] pr-1"
+                  src="/assets/etc/twitter.png"
+                  alt="Twitter"
+                />
                 <span>Twitter</span>
               </div>
             </div>

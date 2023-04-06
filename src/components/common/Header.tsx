@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
@@ -11,7 +10,7 @@ const navigation = [
   { name: "JoinUs", href: "#", class: "active" },
 ];
 
-export default function Header() {
+const Header = () => {
   return (
     <>
       <div className="min-h-full">
@@ -93,3 +92,5 @@ export default function Header() {
     </>
   );
 }
+
+export default Header;
