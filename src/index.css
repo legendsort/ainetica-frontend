@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
@@ -25,14 +25,33 @@ code {
   font-family: "Dune Rise";
 }
 
+.primary-shadow {
+  @apply shadow-lg shadow-primary
+}
+
 .joinUs {
   @apply mx-auto bg-primary text-white rounded-md px-3 py-2 pl-8 pr-8 text-xl font-medium  h-[44px]
 }
 
 .joinUs:active {
-  @apply bg-white text-primary border-primary border-b-4 border-l-2 border-r-2
+  @apply bg-white text-primary primary-shadow
 }
 
+.subtitle {
+  @apply uppercase text-2xl
+}
+
+.feature-avatar-box {
+  @apply flex items-center justify-center border-2 rounded-xl border-white primary-shadow w-[137px] h-[124px] 
+}
+
+.feature-avatar {
+  @apply w-[35px] h-[35px] md:w-[65px] md:h-[65px]
+}
+
+.feature-description {
+  @apply max-w-[800px] min-h-[102px] leading-5 border-2 primary-shadow p-4
+}
 * * {
   font-family: "Basis Grotesque Arabic Pro";
 }

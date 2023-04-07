@@ -6,7 +6,7 @@ const Introduction = () => {
         style={{ backgroundImage: "url('/assets/etc/introduction.png')" }}
       >
         <div className="flex items-center justify-center mx-auto">
-          <h1 className="uppercase title pt-8">-Introduction-</h1>
+          <h1 className="subtitle pt-8">-Introduction-</h1>
         </div>
       </div>
       <div className="container flex flex-col items-center justify-center mx-auto p-3">
