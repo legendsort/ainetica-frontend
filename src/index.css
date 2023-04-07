@@ -41,7 +41,17 @@ code {
   @apply uppercase text-2xl
 }
 
+.feature-avatar-box {
+  @apply flex items-center justify-center border-2 rounded-xl border-white primary-shadow w-[137px] h-[124px] 
+}
 
+.feature-avatar {
+  @apply w-[35px] h-[35px] md:w-[65px] md:h-[65px]
+}
+
+.feature-description {
+  @apply max-w-[800px] min-h-[102px] leading-5 border-2 primary-shadow p-4
+}
 * * {
   font-family: "Basis Grotesque Arabic Pro";
 }
