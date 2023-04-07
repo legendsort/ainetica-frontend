@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div
-      className="flex h-screen text-white text-xl  bg-cover bg-center"
+      className="flex h-screen text-white text-xl bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/etc/background.png')" }}
     >
       <div className="container mx-auto">
@@ -16,7 +16,9 @@ const Hero = () => {
                 revolutionize the way users experience social media
               </p>
               <a href="/">
-                <span className="flex justify-center joinUs w-[141px]">Join Us</span>
+                <span className="flex justify-center md:float-left joinUs w-[141px]">
+                  Join Us
+                </span>
               </a>
             </div>
           </div>

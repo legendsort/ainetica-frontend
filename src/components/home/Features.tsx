@@ -59,19 +59,22 @@ const items = [
 
 const Features = () => {
   return (
-    <div className="bg-[#D9D9D9] text-black text-sm md:text-xl leading-5 ">
+    <div className="bg-black text-white text-sm md:text-xl leading-5 ">
       <div className="flex items-center justify-center mx-auto">
-        <h1 className="uppercase title pt-10">-Features-</h1>
+        <h1 className="subtitle pt-10">-Features-</h1>
       </div>
       <div className="container flex flex-col items-center justify-center mx-auto p-3">
         {items.map((item, index) => {
           return item.position === "ltr" ? (
             <div className="flex flex-row pt-1 items-center p-3" key={index}>
-              <img
-                className="pr-3"
-                src={"/assets/features/" + item.image + ".png"}
-                alt="hero"
-              />
+              <div className="custom-border ">
+                <img
+                  className="pr-3"
+                  src={"/assets/features/" + item.image + ".png"}
+                  alt="hero"
+                />
+              </div>
+
               <p className=" max-w-[800px] leading-5">
                 <strong> {item.title} </strong>
                 {item.description}
