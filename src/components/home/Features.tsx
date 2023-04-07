@@ -1,5 +1,4 @@
-const items = [
-  {
+const items = [  {
     image: "feature-1",
     title: "AI-driven Avatar: ",
     description:
@@ -60,42 +59,50 @@ const items = [
 const Features = () => {
   return (
     <div className="bg-black text-white text-sm md:text-xl leading-5 ">
-      <div className="flex items-center justify-center mx-auto">
-        <h1 className="subtitle pt-10">-Features-</h1>
-      </div>
-      <div className="container flex flex-col items-center justify-center mx-auto p-3">
-        {items.map((item, index) => {
-          return item.position === "ltr" ? (
-            <div className="flex flex-row pt-1 items-center p-3" key={index}>
-              <div className="feature-avatar-box">
-                <img
-                  className="feature-avatar"
-                  src={"/assets/features/" + item.image + ".png"}
-                  alt="hero"
-                />
-              </div>
+      <div className="bg-center bg-cover"
+          style={{ backgroundImage: "url('/assets/features/feature-back.png')" }}>
+        <div
+          className="max-w-[940px] bg-center bg-cover h-[107px] mx-auto"
+          style={{ backgroundImage: "url('/assets/etc/branch.png')" }}
+        >
+          <div className="flex items-center justify-center ">
+            <h1 className="subtitle pt-8">-Features-</h1>
+          </div>
+        </div>
+        <div className="container flex flex-col items-center justify-center mx-auto p-3">
+          {items.map((item, index) => {
+            return item.position === "ltr" ? (
+              <div className="flex flex-row pt-1 items-center p-3" key={index}>
+                <div className="feature-avatar-box">
+                  <img
+                    className="feature-avatar"
+                    src={"/assets/features/" + item.image + ".png"}
+                    alt="hero"
+                  />
+                </div>
 
-              <p className="feature-description rounded-r-xl">
-                <strong> {item.title} </strong>
-                {item.description}
-              </p>
-            </div>
-          ) : (
-            <div className="flex flex-row pt-1 items-center p-3" key={index}>
-              <p className="feature-description rounded-l-xl">
-                <strong> {item.title} </strong>
-                {item.description}
-              </p>
-              <div className="feature-avatar-box">
-                <img
-                  className="feature-avatar"
-                  src={"/assets/features/" + item.image + ".png"}
-                  alt="hero"
-                />
+                <p className="feature-description rounded-r-xl">
+                  <strong> {item.title} </strong>
+                  {item.description}
+                </p>
               </div>
-            </div>
-          );
-        })}
+            ) : (
+              <div className="flex flex-row pt-1 items-center p-3" key={index}>
+                <p className="feature-description rounded-l-xl">
+                  <strong> {item.title} </strong>
+                  {item.description}
+                </p>
+                <div className="feature-avatar-box">
+                  <img
+                    className="feature-avatar"
+                    src={"/assets/features/" + item.image + ".png"}
+                    alt="hero"
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

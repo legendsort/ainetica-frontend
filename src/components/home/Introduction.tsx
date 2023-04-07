@@ -2,10 +2,10 @@ const Introduction = () => {
   return (
     <div className="bg-black text-white text-xl ">
       <div
-        className="flex bg-center h-[107px] filter grayscale"
-        style={{ backgroundImage: "url('/assets/etc/introduction.png')" }}
+        className="max-w-[940px] bg-center bg-cover h-[107px] mx-auto"
+        style={{ backgroundImage: "url('/assets/etc/branch.png')" }}
       >
-        <div className="flex items-center justify-center mx-auto">
+        <div className="flex items-center justify-center ">
           <h1 className="subtitle pt-8">-Introduction-</h1>
         </div>
       </div>
