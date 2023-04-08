@@ -1,6 +1,8 @@
 import Hero from "../components/home/Hero";
 import Introduction from "../components/home/Introduction";
 import Features from "../components/home/Features";
+import Goals from "../components/home/Goals";
+
 import JoinUs from "../components/home/JoinUs";
 
 const Home = () => {
@@ -8,6 +10,7 @@ const Home = () => {
     <Hero />
     <Introduction />
     <Features />
+    <Goals />
     <JoinUs />
   </>;
 };

@@ -69,7 +69,7 @@ const Features = () => {
             <h1 className="subtitle pt-8">-Features-</h1>
           </div>
         </div>
-        <div className="container flex flex-col items-center justify-center mx-auto p-3">
+        <div className="panel">
           {items.map((item, index) => {
             return item.position === "ltr" ? (
               <div className="flex flex-row pt-1 items-center p-3" key={index}>

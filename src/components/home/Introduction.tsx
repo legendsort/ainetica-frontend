@@ -9,7 +9,7 @@ const Introduction = () => {
           <h1 className="subtitle pt-8">-Introduction-</h1>
         </div>
       </div>
-      <div className="container flex flex-col items-center justify-center mx-auto p-3">
+      <div className="panel">
         <p className="max-w-[940px] leading-5 text-center">
           Introducing a revolutionary social media platform designed to
           transform the way we connect, interact, and share experiences. Our
