@@ -1,4 +1,5 @@
-import GoalCard from "./GoalCard";const goals = [
+import GoalCard from "./GoalCard";
+const goals = [
   {
     image: "goal-1",
     title: "Pioneering AI Advancements",
@@ -72,7 +73,7 @@ const Goals = () => {
             })}
           </div>
           <div
-            className="flex items-center justify-center bg-center bg-contain object-fill h-[231px] w-[812px] "
+            className="container flex items-center justify-center bg-center bg-contain h-[231px] w-[812px] "
             style={{
               backgroundImage: "url('/assets/goals/goal-back.png')",
             }}
